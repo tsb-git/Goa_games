@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reward Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-start">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="home.html" class="navbar-brand">
+                        <img src="images/logo.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="dashboard.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/person.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Accounts</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="promotions.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/favorites.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Promotions</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/tennis-ball.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Sports</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="exchange.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/exchange.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Exchange</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="live-casino.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/chip.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Live Casino</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/television.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">TV Games</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/cards.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Card Games</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/aeroplane.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Instant Games</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/vr-glass.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Virtual</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/seven.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Slot</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/24.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Sponsorship</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/persons.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Refer A Friend</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="nav-item">
+                                <a href="faqs.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/faq.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">FAQ</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="reward.html" class="nav-link"> 
+                                    <span class="nav-icon"><img src="images/icons/reward.svg" class="img-fluid" alt=""></span>
+                                    <span class="text">Rewards</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/Offcanvas -->
+                <div class="navbar-end">
+                    <div class="login-nav">
+                        <div class="amount-wrap">
+                            <span class="currency-symbol">INR</span>
+                            <span class="amount">0.00</span>
+                        </div>
+                        <div class="user">
+                            <a href="dashboard.html"><i class="fa-solid fa-circle-user"></i></a>
+                        </div>
+                        <div class="notification">
+                            <a href="#" class=""><i class="fa-solid fa-bell"></i></a>
+                        </div>
+                        <a href="#" class="btn bg-dark-50">Deposit</a>
+                    </div>
+                </div>
+                <!--/Navbar -->
+            </div>
+        </nav>
+    </header>
+    <main class="page-content sec-py pt-md-80">
+        <section class="page-section reward-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                               <div class="user-profile">
+                                    <div class="user-img">
+                                        <a href="#"><img src="images/user.png" class="img-fluid" alt=""></a>
+                                    </div>
+                                    <span class="name"><a href="#"> Username</a></span>
+                               </div>
+                               <div class="point-wrap">
+                                    <span class="value">2560</span>
+                                    <span class="title">Points</span>
+                               </div>
+                               <div class="file-wrap">
+                                    <a href="#">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-file-lines"></i>
+                                        </div>
+                                        <span>T&C</span>
+                                    </a>
+                               </div>
+                            </div>
+                            <div class="card-body">
+                               <div class="reward-wrap">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>1</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>2</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>3</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>4</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>5</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>7</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>8</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>9</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reward-item">
+                                            <div class="sl-num">
+                                                <span>10</span>
+                                            </div>
+                                            <div class="required-point">
+                                                <span class="value">100 Pt</span>
+                                                <span class="title">Required point</span>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">50 INR</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <!--/reward -->
+                                    </div>  
+
+                                </div>
+                                    
+                               </div>
+                               <!--/Reward Wrap -->
+                            </div>
+                        </div>
+                        <!--/Card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/Featured Section -->
+    </main>
+    <footer class="footer">
+        <section class="top-games-section">
+            <div class="container-fluid">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Top games and more
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="footer-widget">
+                                            <h3 class="footer-title">About Betting</h3>
+                                            <ul>
+                                                <li><a href="#">Baccarat</a></li>
+                                                <li><a href="#">Blackjack</a></li>
+                                                <li><a href="#">Kabaddi</a></li>
+                                                <li><a href="#">Omaha Poker</a></li>
+                                                <li><a href="#">Cricket Odds</a></li>
+                                                <li><a href="#">Cricket App</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>  
+                                    <div class="col-lg-4">
+                                        <div class="footer-widget">
+                                            <h3 class="footer-title">Partner</h3>
+                                            <ul>
+                                                <li><a href="#">Baccarat</a></li>
+                                                <li><a href="#">Blackjack</a></li>
+                                                <li><a href="#">Kabaddi</a></li>
+                                                <li><a href="#">Omaha Poker</a></li>
+                                                <li><a href="#">Cricket Odds</a></li>
+                                                <li><a href="#">Cricket App</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>  
+                                    <div class="col-lg-4">
+                                        <div class="footer-widget">
+                                            <h3 class="footer-title">FIFA World Cup</h3>
+                                            <ul>
+                                                <li><a href="#">Baccarat</a></li>
+                                                <li><a href="#">Blackjack</a></li>
+                                                <li><a href="#">Kabaddi</a></li>
+                                                <li><a href="#">Omaha Poker</a></li>
+                                                <li><a href="#">Cricket Odds</a></li>
+                                                <li><a href="#">Cricket App</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>  
+                               </div>
+                            </div>
+                        </div>
+                        <!--/Accordion collapse -->
+                    </div>
+                    <!--/Accordion Item -->
+                </div>
+            </div>
+        </section>
+        <section class="footer-links-section">
+            <div class="container-fluid">
+                <div class="footer-grid grid grid-1 grid-md-3 grid-lg-5 border-top pt-3">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Products</h3>
+                        <ul>
+                            <li><a href="#">Baccarat</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Kabaddi</a></li>
+                            <li><a href="#">Omaha Poker</a></li>
+                            <li><a href="#">Cricket Odds</a></li>
+                            <li><a href="#">Cricket App</a></li>
+                        </ul>
+                    </div>  
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Goagames</h3>
+                        <ul>
+                            <li><a href="#">Baccarat</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Kabaddi</a></li>
+                            <li><a href="#">Omaha Poker</a></li>
+                            <li><a href="#">Cricket Odds</a></li>
+                            <li><a href="#">Cricket App</a></li>
+                        </ul>
+                    </div>  
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Crickets</h3>
+                        <ul>
+                            <li><a href="#">Baccarat</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Kabaddi</a></li>
+                            <li><a href="#">Omaha Poker</a></li>
+                            <li><a href="#">Cricket Odds</a></li>
+                            <li><a href="#">Cricket App</a></li>
+                        </ul>
+                    </div>  
+                    <div class="footer-widget">
+                        <h3 class="footer-title">IPL</h3>
+                        <ul>
+                            <li><a href="#">Baccarat</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Kabaddi</a></li>
+                            <li><a href="#">Omaha Poker</a></li>
+                            <li><a href="#">Cricket Odds</a></li>
+                            <li><a href="#">Cricket App</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Support</h3>
+                        <ul>
+                            <li><a href="#">Baccarat</a></li>
+                            <li><a href="#">Blackjack</a></li>
+                            <li><a href="#">Kabaddi</a></li>
+                            <li><a href="#">Omaha Poker</a></li>
+                            <li><a href="#">Cricket Odds</a></li>
+                            <li><a href="#">Cricket App</a></li>
+                        </ul>
+                    </div> 
+               </div>
+            </div>
+        </section>
+        <section class="footer-payment-section">
+            <div class="container-fluid">
+                <div class="footer-widget border-top pt-3">
+                    <h3 class="footer-title">Payment Method</h3>
+                    <ul class="payment-list">
+                        <li> <span class="payment-icon"><img src="images/payment-getway/UPI-Logo.svg" class="img-fluid"  alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/net-nbanking.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/g-pay.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/Bitcoin_logo.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/15_module.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/bank-transfer-bank.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/MasterCard.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/astropay-direct-vector-logo.svg" class="img-fluid" alt=""></span></li>
+                        <li> <span class="payment-icon"><img src="images/payment-getway/sticpay.svg" class="img-fluid" alt=""></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer-social-section">
+            <div class="container-fluid">
+                <div class="footer-widget border-top pt-3">
+                    <h3 class="footer-title">Social Network</h3>
+                    <ul class="footer-links-border">
+                        <li> <a href="#"> <img src="images/icons/facebook.svg" class="img-fluid"  alt=""></a></li>
+                        <li> <a href="#"> <img src="images/icons/instagram.svg" class="img-fluid"  alt=""></a></li>
+                        <li> <a href="#"> <img src="images/icons/youtube.svg" class="img-fluid"  alt=""></a></li>
+                        <li> <a href="#"> <img src="images/icons/telegram.svg" class="img-fluid"  alt=""></a></li>
+                        <li> <a href="#"> <img src="images/icons/whatsapp.svg" class="img-fluid"  alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="responsibility-section">
+            <div class="container-fluid">
+                <div class="footer-widget border-top pt-3">
+                    <h3 class="footer-title">Responsibility</h3>
+                    <ul class="footer-links-border">
+                        <li> <a href="#"> <img src="images/21-plue.svg" class="img-fluid"  alt=""></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <section class="license-section">
+            <div class="container-fluid">
+                <div class="footer-widget border-top pt-3">
+                    <h3 class="footer-title">License</h3>
+                </div>
+                
+            </div>
+        </section>
+    </footer>
+    <div class="footer-navbar">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/person.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Accounts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="promotions.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/favorites.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Promotions</span>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/tennis-ball.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Sports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="exchange.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/exchange.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Exchange</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="live-casino.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/chip.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Live Casino</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/television.svg" class="img-fluid" alt=""></span>
+                            <span class="text">TV Games</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/cards.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Card Games</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/aeroplane.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Instant Games</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/vr-glass.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Virtual</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/seven.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Slot</span>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/24.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Sponsorship</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/persons.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Refer A Friend</span>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="faqs.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/faq.svg" class="img-fluid" alt=""></span>
+                            <span class="text">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reward.html" class="nav-link"> 
+                            <span class="nav-icon"><img src="images/icons/reward.svg" class="img-fluid" alt=""></span>
+                            <span class="text">Rewards</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-nav-wrap">
+            <ul class="footer-nav">
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="images/icons/fire-white.svg" class="img-fluid" alt=""></span>
+                        <span class="nav-text">Top</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="images/icons/baseball-white.svg" class="img-fluid" alt=""></span>
+                        <span class="nav-text">Sports</span>
+                    </a>
+                </li>
+                <li>
+                    <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                        <div class="circle" id="toggleButton">
+                            <button class="btn">
+                              <span class="icon-hamburger"><i class="fa-solid fa-bars"></i></span>
+                              <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+                            </button>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="images/icons/purchase-order-white.svg" class="img-fluid" alt=""></span>
+                        <span class="nav-text">My Bets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="images/icons/chip-white.svg" class="img-fluid" alt=""></span>
+                        <span class="nav-text">Evolution</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Bootstrap & Jquery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+    <script>
+        // JavaScript to handle toggling of the active class and off-canvas menu
+        document.getElementById('toggleButton').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.getElementById('offcanvasBottom').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
