@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Faq Page</title>
+    <title>User Info Page</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Fonts CSS -->
@@ -140,7 +140,7 @@
                         <div class="notification">
                             <a href="#" class=""><i class="fa-solid fa-bell"></i></a>
                         </div>
-                        <a href="#" class="btn bg-dark-50">Deposit</a>
+                        <a href="#deposit_modal" data-bs-toggle="modal" class="btn bg-dark-50">Deposit</a>
                     </div>
                 </div>
                 <!--/Navbar -->
@@ -148,37 +148,194 @@
         </nav>
     </header>
     <main class="page-content sec-py pt-md-80">
-        <section class="page-section faq-section">
+        <section class="page-section profile-section">
             <div class="container">
-                <div class="page-header">
-                    <div class="action-btn">
-                        <a href="dashboard.html" class="back-btn"><i class="fa-solid fa-angle-left"></i></a>
-                    </div>
-                    <div class="title-wrap">
-                        <h3 class="page-title">FAQ</h3>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="faq-cats">
-                            <ul>
-                                <li><a href="account-faq.html">Account</a></li>
-                                <li><a href="#">Affliate</a></li>
-                                <li><a href="#">Banking</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Promotion</a></li>
-                                <li><a href="#">Registration</a></li>
-                                <li><a href="#">Rewards</a></li>
-                                <li><a href="#">Website</a></li>
-                            </ul>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="profile-sidebar mb-3 mb-lg-0">
+                            <div class="user-meta">
+                                <div class="user-meta-item">
+                                    <div class="user-img"><img src="images/user.png" class="img-fluid" alt=""></div>
+                                    <span class="name">Username</span>
+                                </div>
+                                <div class="user-meta-item">
+                                    <a href="reward.html">Tier 2658 </a>
+                                    <span class="title">Lavel</span>
+                                </div>
+                                <div class="user-meta-item">
+                                    <span class="value">1252</span>
+                                    <span class="title">Points</span>
+                                </div>
+                            </div>
+                            <!--/User Meta -->
+                            <div class="user-balance">
+                                <h5>
+                                    <a data-bs-toggle="collapse" href="#user-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        100.00 INR
+                                    </a>
+                                    <span class="icon"><img src="images/icons/hide.svg" class="img-fluid" alt=""></span>
+                                    <span class="icon"><img src="images/icons/synchronize.svg" class="img-fluid" alt=""></span>
+                                </h5>
+                                
+                                <div class="collapse" id="user-account">
+                                    <h6>
+                                        <span class="title">Main Account</span>
+                                        <span class="amount">0.00 INR</span>
+                                    </h6>
+                                    <p>
+                                        <span class="title">Unsettled bets</span>
+                                        <span class="amount">0.00 INR</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">Withdrawable amount</span>
+                                        <span class="amount">****</span>
+                                    </p>
+                                    <h6>
+                                        <span class="title">Exchange</span>
+                                        <span class="amount">****</span>
+                                    </h6>
+                                    <p>
+                                        <span class="title">Unsettled bets</span>
+                                        <span class="amount">0.00 INR</span>
+                                    </p>
+                                    <h6>
+                                        <span class="title">Lotus Exchange</span>
+                                        <span class="amount">****</span>
+                                    </h6>
+                                    <p>
+                                        <span class="title">Unsettled bets</span>
+                                        <span class="amount">0.00 INR</span>
+                                    </p>
+                                    <h6>
+                                        <span class="title">Playtech Slots</span>
+                                        <span class="amount">****</span>
+                                    </h6>
+                                    <h6>
+                                        <span class="title">Bonus <span class="info"><i class="fa-solid fa-circle-info"></i></span> </span>
+                                        <span class="amount">0.00 INR</span>
+                                    </h6>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <!--/Sidebar -->
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="action-btn">
+                                    <a href="dashboard.html" class="back-btn"><i class="fa-solid fa-angle-left"></i></a>
+                                </div>
+                                <div class="title-wrap">
+                                    <h3 class="page-title">User Info</h3>
+                                </div>
+                            </div>
+                            	<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 18px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+}
+</style>
+<body>
+
+
+<div>
+  <form action="/action_page.php"   style="padding: 60px;" >
+	<p style="color:white;">Attention! Personal data must be real, not fake. Data must be correct and match the data on your bank account. Problem with personal data? Contact <a href="#" style="color:#0AE1CD;" >customer service.</a></p>
+    <label for="fname" style="color:white;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+
+    <label for="lname" style="color:white;">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+	
+	<label for="phone" style="color:white;">Phone number</label>
+	<input type="tel" id="phone" name="phone" placeholder="+91 phone number">
+	
+	<label for="phone" style="color:white;">WhatsApp number</label>
+	<input type="tel" id="phone" name="phone" placeholder="+91 whatsApp number">
+	
+	<label for="telegram" style="color:white;">Telegram Account</label>
+    <input type="text" id="telegram" name="telegram" placeholder="@john123">
+	
+	<label for="birthday" style="color:white;">Birthday</label>
+	<input type="date" id="birthday" name="birthday">
+	
+	<label for="telegram" style="color:white;">E-mail</label>
+    <input type="text" id="telegram" name="telegram" placeholder="email@email.com">
+	
+	
+    <label for="country" style="color:white;">Preferred Language</label>
+    <select id="country" name="country">
+      <option value="australia">English</option>
+      <option value="canada">Hindi</option>
+    </select>
+  <br><br>
+    <center><input type="submit" value="Submit" ></center>
+  </form>
+</div>
+
+</body>
+</html>
+                                <!--/accordion -->
+                            </div>
+                        </div>
+                        <!--/Card-->
                     </div>
                 </div>
             </div>
         </section>
-        <!--/Featured Section -->
+        <!--/Profile Section -->
     </main>
+
+
+
+
     <footer class="footer">
         <section class="top-games-section">
             <div class="container-fluid">
@@ -486,6 +643,258 @@
             </ul>
         </div>
     </div>
+    <div class="modal" id="deposit_modal" data-bs-backdrop="false"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <section class="page-section deposit-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="profile-sidebar mb-3 mb-lg-0">
+                                        <div class="user-meta">
+                                            <div class="user-meta-item">
+                                                <div class="user-img"><img src="images/user.png" class="img-fluid" alt=""></div>
+                                                <span class="name">Username</span>
+                                            </div>
+                                            <div class="user-meta-item">
+                                                <a href="reward.html">Tier 2658 </a>
+                                                <span class="title">Lavel</span>
+                                            </div>
+                                            <div class="user-meta-item">
+                                                <span class="value">1252</span>
+                                                <span class="title">Points</span>
+                                            </div>
+                                        </div>
+                                        <!--/User Meta -->
+                                        <div class="user-balance">
+                                            <h5>
+                                                <a data-bs-toggle="collapse" href="#user-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    100.00 INR
+                                                </a>
+                                                <span class="icon"><img src="images/icons/hide.svg" class="img-fluid" alt=""></span>
+                                                <span class="icon"><img src="images/icons/synchronize.svg" class="img-fluid" alt=""></span>
+                                            </h5>
+                                            
+                                            <div class="collapse" id="user-account">
+                                                <h6>
+                                                    <span class="title">Main Account</span>
+                                                    <span class="amount">0.00 INR</span>
+                                                </h6>
+                                                <p>
+                                                    <span class="title">Unsettled bets</span>
+                                                    <span class="amount">0.00 INR</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title">Withdrawable amount</span>
+                                                    <span class="amount">****</span>
+                                                </p>
+                                                <h6>
+                                                    <span class="title">Exchange</span>
+                                                    <span class="amount">****</span>
+                                                </h6>
+                                                <p>
+                                                    <span class="title">Unsettled bets</span>
+                                                    <span class="amount">0.00 INR</span>
+                                                </p>
+                                                <h6>
+                                                    <span class="title">Lotus Exchange</span>
+                                                    <span class="amount">****</span>
+                                                </h6>
+                                                <p>
+                                                    <span class="title">Unsettled bets</span>
+                                                    <span class="amount">0.00 INR</span>
+                                                </p>
+                                                <h6>
+                                                    <span class="title">Playtech Slots</span>
+                                                    <span class="amount">****</span>
+                                                </h6>
+                                                <h6>
+                                                    <span class="title">Bonus <span class="info"><i class="fa-solid fa-circle-info"></i></span> </span>
+                                                    <span class="amount">0.00 INR</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/Sidebar -->
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="action-btn">
+                                                <a href="dashboard.html" class="back-btn"><i class="fa-solid fa-angle-left"></i></a>
+                                            </div>
+                                            <div class="title-wrap">
+                                                <h3 class="page-title">Deposit Method</h3>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="payment-methed">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">   
+                                                                <a href="#">
+                                                                    <h3 class="title">UPI</h3>
+                                                                    <div class="amount">
+                                                                        500 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                               </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/upi-icon.jpg" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                       
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">
+                                                                <a href="#">
+                                                                    <h3 class="title">AstroPay</h3>
+                                                                    <div class="amount">
+                                                                        200 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/astropay-logo-vector.png" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">
+                                                                <a href="#">
+                                                                    <h3 class="title">PayZ</h3>
+                                                                    <div class="amount">
+                                                                        200 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/payz-logo.svg" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">
+                                                                <a href="#">
+                                                                    <h3 class="title">CryptoCurrency</h3>
+                                                                    <div class="amount">
+                                                                        200 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/cryptocurrency-wallet.svg" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">
+                                                                <a href="#">
+                                                                    <h3 class="title">Sticpay</h3>
+                                                                    <div class="amount">
+                                                                        200 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/logo_sticpay_o.svg" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="payment-item make_payment">
+                                                            <div class="payment-content">
+                                                                <a href="#">
+                                                                    <h3 class="title">Prepaid Card</h3>
+                                                                    <div class="amount">
+                                                                        200 - 200000 INR
+                                                                    </div>
+                                                                    <div class="time">
+                                                                        <i class="fa-regular fa-clock"></i> 10 mins
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="img-wrap">
+                                                                <a href="#">
+                                                                    <img src="images/icons/upi-payment/credit-card-2-svgrepo-com.svg" class="img-fluid" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!--/payment Item -->
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                           <!--/Payment Methed -->
+                                        </div>
+                                    </div>
+                                    <!--/Card-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--/Deposit Section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Deposit Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="payment_modal" tabindex="1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5">Make Payment</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control" placeholder="Enter Amount">
+                            <button type="submit" class="btn btn-solid">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/payment Modal -->
     <!-- Bootstrap & Jquery JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -494,6 +903,13 @@
     <!-- Custom JS -->
     <script src="js/app.js"></script>
     <script>
+        $('.make_payment').click(function(e)
+            {
+                e.preventDefault();
+                $('#payment_modal').modal('show');
+        });
+    </script>
+     <script>
         // JavaScript to handle toggling of the active class and off-canvas menu
         document.getElementById('toggleButton').addEventListener('click', function() {
           this.classList.toggle('active');
