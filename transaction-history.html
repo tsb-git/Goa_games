@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reset password</title>
+    <title>Transaction History</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Fonts CSS -->
@@ -219,17 +219,18 @@
                         </div>
                         <!--/Sidebar -->
                     </div>
-                    <div class="col-lg-8">
-                        <div class="card">
+                    <div class="col-lg-8" style="background-color:#36485E;">
+                        <div class="card" style="background-color:#36485E;">
                             <div class="card-header">
                                 <div class="action-btn">
                                     <a href="dashboard.html" class="back-btn"><i class="fa-solid fa-angle-left"></i></a>
                                 </div>
                                 <div class="title-wrap">
-                                    <h3 class="page-title">Reset password</h3>
+                                    <h3 class="page-title">Transaction History</h3>
                                 </div>
                             </div>
-                            	<!DOCTYPE html>
+							
+							                            	<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -250,44 +251,14 @@
 	--transform-arrow-down: rotate(-180deg);
 	--trans: all 250ms ease-in-out;
 }
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 18px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 
-
-input[type=submit] {
-  width: 50%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-}
 
 button{all:unset;}
 
 .cp_wrapper{
   width: 90%;
-  max-width:600px;
   margin-inline: auto;
-  padding: 40px;
   border-radius:10px;
 }
 
@@ -342,36 +313,141 @@ button{all:unset;}
 </style>
 </head>
 <body>
-
-<div class="cp_wrapper">
-	<div class="tabs">
-		<div class="tabs-controls">
-			<button type="button" class="tabs-control" aria-selected="true" aria-controls="tabs-login" style="color:white;">Account</button>
+<div class="cp_wrapper" style="background-color:#36485E;">
+	<div class="tabs" style="background-color:#36485E;">
+		<div class="tabs-controls" style="background-color:#36485E;">
+			<button type="button" class="tabs-control" aria-selected="false" aria-controls="tabs-register" style="color:white;">Deposite</button>
+			<button type="button" class="tabs-control" aria-selected="true" aria-controls="tabs-login" style="color:white;">Transfer</button>
 			<button type="button" class="tabs-control" aria-selected="false" aria-controls="tabs-register" style="color:white;">Withdrawal</button>
 		</div>
 		<div class="tabs-panels">
 
 			<!-- Login -->
-			<div class="tabs-panel" id="tabs-login" aria-selected="true" data-action="login" >
-				<div class="tab-content">
-					<div>
-						<form action="/action_page.php"    >
-						<label for="fname" style="color:white;">Current password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						<label for="fname" style="color:white;">New password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						<label for="fname" style="color:white;">Confirm New Password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						<label for="fname" style="color:white;">Verification code</label>
-						<input type="text" id="fname" name="firstname" required>
+			<div class="tabs-panel" id="tabs-login" aria-selected="true" data-action="login" style="background-color:#36485E;">
+				<div class="tab-content" style="background-color:#36485E;">
+					<section class="page-section reward-section" style="background-color:#36485E;">
+                <div class="row justify-content-center" style="background-color:#36485E;">
+                    <div class="col-lg-12" style="background-color:#36485E;">
+                        <div class="card" style="background-color:#36485E;">
+                            
+                            <div class="card-body" style="background-color:#36485E;">
+                               <div class="reward-wrap">
+                                <div class="row">
+                                        <div class="reward-item">
+                                            
+                                            <div class="required-point">
+                                                <span class="value">Evolution Casino</span>
+                                                <span class="title">2023-07-18 00:18:45</span>
+                                            </div>
+											<div class="icon-box">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">Main Account</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+											<div class="reward">
+                                                <span class="value">0.00 INR</span>
+                                                <span class="title" style="color:#1DB000;">Success</span>
+                                            </div>
+                                            
+                                        <!--/reward -->
+                                    </div>
+									<div class="reward-item">
+                                            
+                                            <div class="required-point">
+                                                <span class="value">Evolution Casino</span>
+                                                <span class="title">2023-07-18 00:18:45</span>
+                                            </div>
+											<div class="icon-box">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">Main Account</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+											<div class="reward">
+                                                <span class="value">52.00 INR</span>
+                                                <span class="title" style="color:#1DB000;">Success</span>
+                                            </div>
+                                            
+                                        <!--/reward -->
+                                    </div>
+									<div class="reward-item">
+                                            
+                                            <div class="required-point">
+                                                <span class="value">Evolution Casino</span>
+                                                <span class="title">2023-07-18 00:18:45</span>
+                                            </div>
+											<div class="icon-box">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">Main Account</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+											<div class="reward">
+                                                <span class="value">60.00 INR</span>
+                                                <span class="title" style="color:#1DB000;">Success</span>
+                                            </div>
+                                            
+                                        <!--/reward -->
+                                    </div>
+									<div class="reward-item">
+                                            
+                                            <div class="required-point">
+                                                <span class="value">Evolution Casino</span>
+                                                <span class="title">2023-07-18 00:18:45</span>
+                                            </div>
+											<div class="icon-box">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">Main Account</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+											<div class="reward">
+                                                <span class="value">10.54 INR</span>
+                                                <span class="title" style="color:#1DB000;">Success</span>
+                                            </div>
+                                            
+                                        <!--/reward -->
+                                    </div>
+									<div class="reward-item">
+                                            
+                                            <div class="required-point">
+                                                <span class="value">Evolution Casino</span>
+                                                <span class="title">2023-07-18 00:18:45</span>
+                                            </div>
+											<div class="icon-box">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div class="reward">
+                                                <span class="value">Main Account</span>
+                                                <span class="title">Rewards</span>
+                                            </div>
+											<div class="reward">
+                                                <span class="value">0.00 INR</span>
+                                                <span class="title" style="color:#1DB000;">Success</span>
+                                            </div>
+                                            
+                                        <!--/reward -->
+                                    </div>
+                                    
+                                   
+                                   
 
-    
-						<center><input type="submit" value="Submit" ></center>
-						</form>
-					</div>
+                                </div>
+                                    
+                              
+                               <!--/Reward Wrap -->
+                            </div>
+                        </div>
+                        <!--/Card -->
+                    </div>
+                </div>
+            </div>
+        </section>
 				</div>
 			</div>
 
@@ -379,22 +455,7 @@ button{all:unset;}
 			<div class="tabs-panel" id="tabs-register" aria-selected="false" data-action="register">
 				
 				<div class="tab-content">
-					<div>
-						<form action="/action_page.php"    >
-						<label for="fname" style="color:white;">Current password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						<label for="fname" style="color:white;">New password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						<label for="fname" style="color:white;">Confirm New Password</label>
-						<input type="text" id="fname" name="firstname" required>
-						
-						
-    
-						<center><input type="submit" value="Submit" ></center>
-						</form>
-					</div>
+					
 				</div>
 
 			</div>
@@ -439,7 +500,8 @@ function init__tabs(){
 
 </body>
 </html>
-
+							
+			
                                 <!--/accordion -->
                             </div>
                         </div>
